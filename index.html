@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+      position: relative;
+      min-width: 0;
+      padding: 0;
+      margin: 0;
+    }
+    
+    h1, h2, h3, h4 {
+      text-wrap: balance;
+    }
+    p {
+      text-wrap: pretty;
+    }
+    body {
+      background-color:hsl(212, 45%, 89%); 
+      font-family: 'Outfit', sans-serif;
+      display: grid;
+      grid-template-rows: 80fr 1fr;
+      grid-template-areas:
+        "main"
+        "footer";
+      max-height: 100dvh;
+    }
+
+    main {
+      grid-area: main;
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      width: 320px;
+      height: 499px;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      padding: 16px;  
+      text-align: center;
+      box-shadow: 0 25px 25px 0 rgba(0,0,0,4.77%);
+    }
+
+    .image-container img{width: 100%; border-radius: 10px;}
+    
+    .info-container{ 
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%; 
+      padding: 16px;
+    }
+
+    .info-container h3{font-weight: 700; line-height: 120%; color: hsl(218, 44%, 22%);}
+    .info-container p {font-weight: 400; font-size: 15px; color:hsl(216, 15%, 48%)}
+
+
+    footer {
+      grid-area: footer;
+    }
+
+    .attribution { font-size: 11px; text-align: center; padding: 40px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <figure class="image-container">
+        <img src="./images/image-qr-code.png" alt="qr code">
+      </figure>
+      <div class="info-container">
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/PymPiDev" target="_blank">PymPiDev</a>.
+  </footer>
+</body>
+</html>
